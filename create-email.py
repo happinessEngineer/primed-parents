@@ -6,7 +6,7 @@ from openai import OpenAI
 import base64
 
 client = OpenAI()
-PRIVATE_API_KEY = 'private_sQ6RQmK79tRnezLY3vUkYr4xkyY='
+PRIVATE_API_KEY = os.environ['IMAGE_KIT_API_KEY']
 IMAGEKIT_URL = 'https://upload.imagekit.io/api/v1/files/upload'
 
 struggles = [
